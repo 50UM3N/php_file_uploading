@@ -1,0 +1,165 @@
+/*
+
+  Created by Soumen Khara
+  support: 50UM3N on github
+  stay creative
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Allerta);
+
+body{
+  background: #00ACC1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #00ACC1, #8DC26F);
+  background: -moz-linear-gradient(right, #00ACC1, #8DC26F);
+  background: -o-linear-gradient(right, #00ACC1, #8DC26F);
+  background: linear-gradient(to left, #00ACC1, #8DC26F);
+  font-family: 'Allerta';font-size: 12px;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img/*logo image*/
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.login-page {/*login menu*/
+  width: 300px;
+  padding: 0 0 0;
+  margin: auto;
+}
+
+.login-page p{/*in login menu any paragraph*/
+  text-align: center;
+  text-transform: uppercase;
+  color: #004D40;
+}
+
+.form {/*login form*/
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form .input input {/* login form's inputs */
+  font-family: 'Allerta';font-size: 12px;;
+  outline: none;
+  background: #f2f2f2;
+  width: 100%;
+  border: 1px solid #004D40;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.form .input span{/* login form's inputs span text */
+    position: relative;
+    top: -17px;
+    left: 10px;
+    margin-top: 0px;
+    padding: 0px;
+    transition: 0.5s;
+    pointer-events: none;
+    background: #f2f2f2;
+    border: 1px solid #004D40;
+    text-transform: uppercase;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.form .input input:focus ~ span{ /*span animation with respect to input*/
+  top: -34px;
+  left: 10px;
+}
+
+.form button {/*login form's buttons*/
+  font-family: 'Allerta';font-size: 12px;;
+  outline: 0;
+  color: #FFFFFF;
+  background: #00838F;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  margin: 10px 0 0;
+  border-radius: 30px 30px 30px 30px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button a{/*under login form buttons if any hyperlink*/
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.form button:hover,.form button:active,.form button:focus {/*login form's button's animation*/
+  background: #006064;
+}
+
+.list{ /*This is a box/cards*/
+  position: relative;
+  background: #FFFFFF;
+  max-width: 260px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.list p{/*in box/card any paragraph*/
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.list p a{/*in paragraph of the box if any hyperlink*/
+  color: #D50000;
+  text-decoration: none;
+}
+
+.list .ul{/*in boxe's unorder list*/
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+.list .ul li{/*unordered list elemints*/
+  font-family: 'Allerta';font-size: 12px;;
+  text-align: left;
+  margin: 1px;
+  border-radius: 5px 5px 5px 5px;
+  background: #00838F;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.list .ul li a{/*if the list is hyperlink*/
+  color: #D50000;
+  text-decoration: none;
+}
+
+.errors p{/*error paragraph*/
+    color: #FF1744;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.success p{/*success paragraph*/
+  color: #64DD17;
+  font-size: 10px;
+  text-transform: uppercase;
+}
